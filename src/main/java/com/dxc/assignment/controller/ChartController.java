@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dxc.assignment.model.AreaChart;
 import com.dxc.assignment.model.PieChart;
+import com.dxc.assignment.model.User;
+import com.dxc.assignment.repository.UserRepository;
 import com.dxc.assignment.services.AreaChartService;
 import com.dxc.assignment.services.PieChartService;
 
@@ -22,18 +24,24 @@ public class ChartController {
 	private PieChartService pieChartService;
 	@Autowired
 	private AreaChartService areChartService;
+	@Autowired
+	private UserRepository userRepository;
 	
 	@CrossOrigin
 	@GetMapping("/pie/{project}")
 	public PieChart getPieChart(@PathVariable("project") String project) {
-		PieChart pie = pieChartService.createPieChart(project);
+		PieChart pie = pieChartService.findPieChart(project);
 		return pie;
 	}
 	@CrossOrigin
 	@GetMapping("/area/{project}")
 	public List<AreaChart> getAreaChart(@PathVariable("project") String project) {
-		List<AreaChart> areaCharts = areChartService.createAreaChart(project);
+		List<AreaChart> areaCharts = areChartService.findAreaChart(project);
 		return areaCharts;
+	}
+	@GetMapping("/user/{username}")
+	public User findByUsername(@PathVariable("username") String username) {
+		return userRepository.findByUsername(username);
 	}
 	
 }

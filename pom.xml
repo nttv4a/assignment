@@ -74,12 +74,21 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 		</dependency>
+<<<<<<< HEAD
+		
+		        <dependency>
+          <groupId>org.webjars</groupId>
+          <artifactId>angularjs</artifactId>
+          <version>1.5.8</version>
+        </dependency>
+=======
 
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>angularjs</artifactId>
 			<version>1.5.8</version>
 		</dependency>
+>>>>>>> d1ce3d93fa9c20624d9ed7f6498fd1a777ad82fd
 
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
@@ -87,6 +96,26 @@
 			<version>1.6.0</version>
 		</dependency>
 
+<<<<<<< HEAD
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>angular-route</artifactId>
+            <version>1.5.9</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.webjars</groupId>
+          <artifactId>bootstrap</artifactId>
+          <version>3.3.7</version>
+        </dependency>
+
+		<dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+		
+=======
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
 			<artifactId>angular-route</artifactId>
@@ -113,6 +142,7 @@
 
 
 
+>>>>>>> d1ce3d93fa9c20624d9ed7f6498fd1a777ad82fd
 	</dependencies>
 
 	<build>

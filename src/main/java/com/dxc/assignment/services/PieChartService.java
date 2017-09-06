@@ -4,6 +4,6 @@ import com.dxc.assignment.model.PieChart;
 
 public interface PieChartService {
 
-	PieChart createPieChart(String project);
+	PieChart findPieChart(String project);
 
 }

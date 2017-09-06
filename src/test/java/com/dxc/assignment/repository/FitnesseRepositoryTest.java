@@ -53,29 +53,30 @@ public class FitnesseRepositoryTest {
 	
 	@Ignore
 	public void test() {
-		assertNotNull(fitnesseRepository.getPieChart("001"));
 	}
 	
 	@Ignore
 	public void getAreaChart() {
 //		assertNotNull(fitnesseRepository.getAreaChart("001"));
-		assertEquals(true, fitnesseRepository.getAreaChart("001"));
 	}
 	
 	@Ignore
 	public void listTestSuite() {
-		assertEquals("SuiteIntegrationTesting", fitnesseRepository.getTestSuites(fitnesseRepository.getUrlFitnesse()+"/FrontPage.SuitProject001").get(0));
+//		assertEquals("SuiteIntegrationTesting", fitnesseRepository.getTestSuites(fitnesseRepository.getUrlFitnesse()+"/FrontPage.SuitProject001").get(0));
 	}
 	
 	@Ignore
 	public void getRecordTestFromTable() {
-		assertEquals(55, fitnesseRepository.getAreaChart("SuitProject001").size());
 	}
 	
 	@Test
 	public void uniqueAreaChartWithDate() {
 //		assertEquals(2, fitnesseRepository.uniqueAreaChartWithDate(areas).get(1).getFailed());
+<<<<<<< HEAD
+		assertEquals(2, fitnesseRepository.getProjects());
+=======
 //		assertArrayEquals( fitnesseRepository.uniqueAreaChartWithDate(areas));
+>>>>>>> d1ce3d93fa9c20624d9ed7f6498fd1a777ad82fd
 	}
 
 }
